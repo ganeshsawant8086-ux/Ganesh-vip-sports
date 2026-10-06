@@ -18,7 +18,7 @@ export default function ContactCard({ onToast }) {
 
     setIsSubmitting(true);
     const message = `Hello Ganesh Sawant, I would like to book a VIP Sports Car in Pandharpur.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.serviceType}\nDate: ${formData.date || "Not specified"}`;
-    const waUrl = `https://wa.me/918668811021?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/+918668811021?text=${encodeURIComponent(message)}`;
 
     if (onToast) {
       onToast(`Redirecting to WhatsApp to send booking request...`);
@@ -47,7 +47,7 @@ export default function ContactCard({ onToast }) {
           </a>
           <a
             className="primary-action wa-btn"
-            href="https://wa.me/918668811021?text=Hello%20Ganesh%20Sawant,%20I%20want%20to%20enquire%20about%20booking%20a%20VIP%20Sports%20car."
+            href="https://wa.me/+z918668811021?text=Hello%20Ganesh%20Sawant,%20I%20want%20to%20enquire%20about%20booking%20a%20VIP%20Sports%20car."
             target="_blank"
             rel="noopener noreferrer"
           >
