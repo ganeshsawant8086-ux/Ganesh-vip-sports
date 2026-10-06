@@ -19,7 +19,7 @@ function Header({ cartCount = 0, onOpenCart }) {
           </div>
           <div className="brand-text">
             <span className="brand-name">Ganesh VIP Sports</span>
-            <span className="brand-tagline">Exotic Supercar Rentals • Pandharpur</span>
+            <span className="brand-tagline">Pandharpur, MH</span>
           </div>
         </a>
 
@@ -38,10 +38,10 @@ function Header({ cartCount = 0, onOpenCart }) {
             className="cart-toggle-btn"
             onClick={onOpenCart}
             aria-label="Open booking cart"
-            title="View Booking Cart"
+            title="View Booking Basket"
           >
             <span className="cart-icon">🛒</span>
-            <span className="cart-label">Bookings</span>
+            <span className="cart-label">Basket</span>
             {cartCount > 0 && <span className="cart-badge-count">{cartCount}</span>}
           </button>
 
@@ -51,7 +51,7 @@ function Header({ cartCount = 0, onOpenCart }) {
             title="Call Ganesh Sawant directly"
           >
             <span className="call-icon">📞</span>
-            <span className="call-text">8668811021</span>
+            <span className="call-text">Call</span>
           </a>
 
           <button
@@ -68,7 +68,15 @@ function Header({ cartCount = 0, onOpenCart }) {
       {/* Mobile Drawer Menu */}
       <div className={`mobile-nav-drawer ${mobileOpen ? "open" : ""}`}>
         <div className="mobile-nav-inner">
-          <p className="mobile-nav-title">Navigation</p>
+          <div className="mobile-nav-top-row">
+            <p className="mobile-nav-title">VIP Navigation</p>
+            <button
+              className="mobile-close-chip"
+              onClick={() => setMobileOpen(false)}
+            >
+              Close ✕
+            </button>
+          </div>
           <div className="mobile-nav-links">
             {menuItems.map((item) => (
               <a
@@ -84,7 +92,7 @@ function Header({ cartCount = 0, onOpenCart }) {
           </div>
 
           <div className="mobile-drawer-contact">
-            <p className="contact-subtitle">Owner & Concierge</p>
+            <p className="contact-subtitle">Owner & VIP Concierge</p>
             <h4 className="contact-name">Ganesh Sawant</h4>
             <div className="mobile-action-row">
               <a href="tel:+918668811021" className="action-btn-call">
