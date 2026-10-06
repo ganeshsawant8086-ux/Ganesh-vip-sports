@@ -84,7 +84,7 @@ Hello Ganesh Sawant, I would like to confirm vehicle availability and booking de
             <div className="cart-header-title-wrap">
               <span className="cart-icon-big">🛒</span>
               <div>
-                <h3>VIP Booking Basket</h3>
+                <h3>VIP Bookings</h3>
                 <p>
                   {cart.length} item{cart.length === 1 ? "" : "s"} selected
                 </p>
@@ -99,7 +99,7 @@ Hello Ganesh Sawant, I would like to confirm vehicle availability and booking de
             {cart.length === 0 ? (
               <div className="cart-empty-state">
                 <span className="empty-cart-icon">🏎️</span>
-                <h4>Your Booking Basket is Empty</h4>
+                <h4>Your Bookings List is Empty</h4>
                 <p>
                   Explore our exotic fleet and add cars or services to calculate quotes and reserve dates.
                 </p>
@@ -170,7 +170,7 @@ Hello Ganesh Sawant, I would like to confirm vehicle availability and booking de
                   📞 Call: 8668811021
                 </a>
                 <button className="btn-clear-cart" onClick={onClear}>
-                  Clear Basket
+                  Clear Bookings
                 </button>
               </div>
             </div>
@@ -293,7 +293,7 @@ Hello Ganesh Sawant, I would like to confirm vehicle availability and booking de
                   className="btn-modal-cancel"
                   onClick={handleClosePopup}
                 >
-                  Back to Basket
+                  Back to Bookings
                 </button>
                 <button type="submit" className="btn-modal-submit-wa">
                   <span>Next Step → Send on WhatsApp</span>

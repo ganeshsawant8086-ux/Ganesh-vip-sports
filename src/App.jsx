@@ -88,7 +88,7 @@ function App() {
           className="mobile-bar-action cart"
           onClick={() => setIsCartOpen(true)}
         >
-          <span>🛒 Basket ({cart.length})</span>
+          <span>🛒 Bookings ({cart.length})</span>
         </button>
         <a
           href="https://wa.me/918668811021?text=Hello%20Ganesh%20Sawant,%20I%20want%20to%20enquire%20about%20booking%20a%20VIP%20Sports%20car."

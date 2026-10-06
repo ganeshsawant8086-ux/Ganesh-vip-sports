@@ -37,11 +37,11 @@ function Header({ cartCount = 0, onOpenCart }) {
           <button
             className="cart-toggle-btn"
             onClick={onOpenCart}
-            aria-label="Open booking cart"
-            title="View Booking Basket"
+            aria-label="Open bookings"
+            title="View Bookings"
           >
             <span className="cart-icon">🛒</span>
-            <span className="cart-label">Basket</span>
+            <span className="cart-label">Bookings</span>
             {cartCount > 0 && <span className="cart-badge-count">{cartCount}</span>}
           </button>
 
